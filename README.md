@@ -9,8 +9,6 @@ Answering a few of these simple questions can help you in choosing the ideal dat
 - Do you want flexibility in the structure of the data persisted to the your database (schemaless)?
 - Will you be handling large quantities of data?
 - Will you be handling small quantities of data?
-- Do you need to store your data indefinitely?
-- Do you only need to store your data for a limited period of time?
 - Will you need atomicity or not?
 - How strict are you with invalid data being sent to your database? (Ideally you are very strict and do server side data validation before persisting it to your database)
 

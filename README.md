@@ -91,7 +91,7 @@ For a more extended list, click [here](http://en.wikipedia.org/wiki/List_of_rela
 NoSQL:
 - CouchDB
 - Couchbase
-- LevelDb
+- LevelDb (is limited, but is great and easy to use, as it does not require instalation)
 - MemcacheDB
 - MongoDb
 - Riak

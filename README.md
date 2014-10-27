@@ -10,7 +10,7 @@ Answering a few of these simple questions can help you in choosing the ideal dat
 - Will you be handling large quantities of data?
 - Will you be handling small quantities of data?
 - The volatility of your data ()
-- Will you need atomicity or not? ([Atomicity](http://en.wikipedia.org/wiki/Atomicity_(database_systems)) is is one of the ACID transaction properties. In an atomic transaction, a series of database operations either all occur, or nothing occurs.) 
+- Will you need atomicity or not? ([Atomicity](http://en.wikipedia.org/wiki/Atomicity_(database_systems)) is is one of the ACID transaction properties. In an atomic transaction, a series of database operations either all occur, or nothing occurs.)
 - How strict are you with invalid data being sent to your database? (Ideally you are very strict and do server side data validation before persisting it to your database)
 
 Consider these few guiding questions and then read on about some of the databases available and the services they provide.
@@ -26,7 +26,6 @@ Consider these few guiding questions and then read on about some of the database
 >that two-dimensional row-column structure naturally. In similar cases today, one should consider NoSQL databases as an option.  
 >Multi-level nesting and hierarchies are very easily represented in the JavaScript Object Notation (JSON) format used
 >by some NoSQL products.”
-
 Source: http://www.zdnet.com/rdbms-vs-nosql-how-do-you-pick-7000020803/
 
 The first downside of RDBMS is that not all the facts about the data model are known at design time, so
@@ -44,3 +43,15 @@ much better choice in that regard, using object focused technologies, such as JS
 >include an open system, the community provides many productivity tools, another big advantage over single-vendor proprietary
 >products. Some organizations, such as MongoDB, even offer free courses online that train employees and interested users
 >in how to use the technology.
+
+#### SQL Vs NoSQL - Speed
+
+Speed depends on various factors:
+>The overall performance depends to a very large degree on choosing the right implementation for your use case. Key/Value stores are very simple,
+>but you can still use them wrong. Column Family Stores are very interesting and also very different from a table based design.
+>Due to this it is easy to have a bad data model design and this will kill your performance.
+
+>Besides the obvious factors of disk I/O, network and caching (which you must of course take into consideration), both application performance and
+>scalability depend heavily on the data itself; more specifically on the distribution across the database cluster.
+
+Source: http://apmblog.compuware.com/2011/10/05/nosql-or-rdbms-are-we-asking-the-right-questions/

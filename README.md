@@ -5,11 +5,12 @@
 >
 
 Answering a few of these simple questions can help you in choosing the ideal database for your project:
-- Do you want a hard fixed data structure (fixed schemas)?
-- Do you want flexibility in the structure of the data persisted to the your database (schemaless)?
+- Do you want a hard fixed data structure (fixed schemas, like an accounting sheet)?
+- Do you want flexibility in the structure of the data persisted to the your database (schemaless, multi-level nesting)?
 - Will you be handling large quantities of data?
 - Will you be handling small quantities of data?
-- Will you need atomicity or not?
+- The volatility of your data ()
+- Will you need atomicity or not? ([Atomicity](http://en.wikipedia.org/wiki/Atomicity_(database_systems)) is is one of the ACID transaction properties. In an atomic transaction, a series of database operations either all occur, or nothing occurs.) 
 - How strict are you with invalid data being sent to your database? (Ideally you are very strict and do server side data validation before persisting it to your database)
 
 Consider these few guiding questions and then read on about some of the databases available and the services they provide.
@@ -27,3 +28,19 @@ Consider these few guiding questions and then read on about some of the database
 >by some NoSQL products.”
 
 Source: http://www.zdnet.com/rdbms-vs-nosql-how-do-you-pick-7000020803/
+
+The first downside of RDBMS is that not all the facts about the data model are known at design time, so
+some flexibility is needed. This presents issues to the RDBMS users. This means that when defining the schema, you must get it
+right or if changes need to be made down the line, these must be minimal, because any revision made later can slow or stop
+the database form operating. Getting it right might have been true for the "old" world of static schema, but today, where changes need
+to be made daily,  a flexible schema is more appropriate.
+
+>As a database grows in size or the number of users multiplies, many RDBMS-based sites suffer serious performance issues.
+
+Today developers require high coding velocity and great agility in the application building process. NoSQL databases have proven to be a
+much better choice in that regard, using object focused technologies, such as JSON, for example.
+
+>The learning curve on JSON, for example, is quite fast and programmers can build a prototype in days and weeks. Since many NoSQL offerings
+>include an open system, the community provides many productivity tools, another big advantage over single-vendor proprietary
+>products. Some organizations, such as MongoDB, even offer free courses online that train employees and interested users
+>in how to use the technology.

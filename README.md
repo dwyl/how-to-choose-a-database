@@ -17,7 +17,7 @@ Consider these few guiding questions and then read on about some of the database
 
 ### RDBMS or NoSQL?
 
-
+---
 
 > “The first consideration that needs to be made when selecting a database is the characteristics of the data you are looking to leverage. If the data has a simple tabular structure,
 >like an accounting spreadsheet, then the relational model could be adequate. Data such as geo-spatial, engineering parts,
@@ -26,12 +26,17 @@ Consider these few guiding questions and then read on about some of the database
 >that two-dimensional row-column structure naturally. In similar cases today, one should consider NoSQL databases as an option.  
 >Multi-level nesting and hierarchies are very easily represented in the JavaScript Object Notation (JSON) format used
 >by some NoSQL products.”
+
 Source: http://www.zdnet.com/rdbms-vs-nosql-how-do-you-pick-7000020803/
+
+---
 
 The first downside of RDBMS is that not all the facts about the data model are known at design time, so
 some flexibility is needed. This presents issues to the RDBMS users. This means that when defining the schema, you must get it
 right or if changes need to be made down the line, these must be minimal, because any revision made later can slow or stop
-the database form operating. Getting it right might have been true for the "old" world of static schema, but today, where changes need
+the database form operating.
+
+However, getting it right might have been true for the "old" world of static schema, but today, where changes need
 to be made daily,  a flexible schema is more appropriate.
 
 >As a database grows in size or the number of users multiplies, many RDBMS-based sites suffer serious performance issues.
@@ -47,28 +52,32 @@ much better choice in that regard, using object focused technologies, such as JS
 #### SQL Vs NoSQL - Performance
 
 Performance depends on various factors:
->The overall performance depends to a very large degree on choosing the right implementation for your use case. Key/Value stores are very simple,
->but you can still use them wrong. Column Family Stores are very interesting and also very different from a table based design.
->Due to this it is easy to have a bad data model design and this will kill your performance.
+The overall performance depends to a very large degree on choosing the right implementation for your use case.
 
->Besides the obvious factors of disk I/O, network and caching (which you must of course take into consideration), both application performance and
->scalability depend heavily on the data itself; more specifically on the distribution across the database cluster.
-Source: http://apmblog.compuware.com/2011/10/05/nosql-or-rdbms-are-we-asking-the-right-questions/
+**Key/Value stores** are very simple,
+but you can still use them wrong.
 
-Another issue regarding performance and where SQL falls short is scaling. As a database grows in size and numbers, RDBMS seek solutions
+**Column Family Stores** are very interesting and also very different from a table based design.
+Due to this it is easy to have a bad data model design and this will kill your performance.
+
+Besides the obvious factors of **disk I/O**, network and caching (which you must of course take into consideration), both application performance and
+scalability depend heavily on the **data** itself; more specifically on the distribution across the database cluster.
+
+**Another issue regarding performance** and where SQL falls short is **scaling**. As a database grows in size and numbers, **RDBMS** seek solutions
 in vertical scaling. This however comes at a great cost, mainly financial, for RDBMS can only scale vertically up to a point where more
-limitations creep-up and horizontal scaling is needed. Although many comercial RDBMS products offer horizontal scaling, these come as
-bolted-on solutions and can be very expensive and complex to implement.
+limitations creep-up and horizontal scaling is needed. Although many comercial RDBMS products offer **horizontal scaling**, these come as
+bolted-on solutions and can be very **expensive** and **complex** to implement.
 
 If you predict you will face such an issue, then NoSQL is to be considered, as many of them were designed specifically to tackle these scale and
 performance issues.
 
-Also NoSQL databases, in general, avoid RDBMS functions like multi-table joins that can be the cause of high latency.
+Also NoSQL databases, in general, avoid RDBMS functions like **multi-table joins** that can be the cause of high latency.
 
 >In the new world of big data, NoSQL offers choices of strict to relaxed consistency that need to be looked at on a case-by-case basis.
 
 >Real time analytics for operational data is better suited to a NoSQL setting. Further, in cases where data is brought together
 >from many upstream systems to build an application (not just reporting), NoSQL is a must.
+
 
 #### Learning curve
 
@@ -77,7 +86,7 @@ the learning curve for a NoSQL database might be smaller than having to learn ho
 
 ### Short list of databases
 
-RDBMS:
+##### RDBMS:
 - Ingres
 - MySQL
 - Oracle
@@ -86,9 +95,9 @@ RDBMS:
 - SQL Azure
 - SQLBase
 
-For a more extended list, click [here](http://en.wikipedia.org/wiki/List_of_relational_database_management_systems)
+*For a more extended list, click [here](http://en.wikipedia.org/wiki/List_of_relational_database_management_systems)*
 
-NoSQL:
+##### NoSQL:
 - CouchDB
 - Couchbase
 - LevelDb (is limited, but is great and easy to use, as it does not require instalation)
@@ -97,4 +106,16 @@ NoSQL:
 - Riak
 - Redis
 
-For a more extended list, click [here](http://en.wikipedia.org/wiki/NoSQL)
+*For a more extended list, click [here](http://en.wikipedia.org/wiki/NoSQL)*
+
+### Resources
+
+For more comparisons on RDBMS and NoSQL : http://apmblog.compuware.com/2011/10/05/nosql-or-rdbms-are-we-asking-the-right-questions/
+
+Couchbase VS CouchDB VS MongoDB : http://db-engines.com/en/system/CouchDB%3BCouchbase%3BMongoDB
+
+Couchbase website: http://www.couchbase.com/
+
+CouchDB website: http://couchdb.apache.org/
+
+MongoDB website: http://www.mongodb.org/

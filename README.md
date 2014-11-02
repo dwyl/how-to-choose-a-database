@@ -1,4 +1,6 @@
-# How to choose the right database
+# Work in progress!
+
+## How to choose the right database
 
 >This might sound obvious, but when it comes to choosing the right database it helps knowing what sort of data you will be
 >dealing with in your application, how it will be structured and the amount of data that will be persisted.
@@ -119,3 +121,5 @@ Couchbase website: http://www.couchbase.com/
 CouchDB website: http://couchdb.apache.org/
 
 MongoDB website: http://www.mongodb.org/
+
+http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis

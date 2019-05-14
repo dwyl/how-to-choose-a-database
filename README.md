@@ -12,7 +12,7 @@ Answering a few of these simple questions can help you in choosing the ideal dat
 - Will you be handling large quantities of data?
 - Will you be handling small quantities of data?
 - The volatility of your data ()
-- Will you need atomicity or not? ([Atomicity](http://en.wikipedia.org/wiki/Atomicity_(database_systems)) is is one of the ACID transaction properties. In an atomic transaction, a series of database operations either all occur, or nothing occurs.)
+- Will you need atomicity or not? ([Atomicity](http://en.wikipedia.org/wiki/Atomicity_(database_systems)) is one of the ACID transaction properties. In an atomic transaction, a series of database operations either all occur, or nothing occurs.)
 - How strict are you with invalid data being sent to your database? (Ideally you are very strict and do server side data validation before persisting it to your database)
 
 Consider these few guiding questions and then read on about some of the databases available and the services they provide.

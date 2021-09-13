@@ -36,7 +36,7 @@ Source: http://www.zdnet.com/rdbms-vs-nosql-how-do-you-pick-7000020803/
 The first downside of RDBMS is that not all the facts about the data model are known at design time, so
 some flexibility is needed. This presents issues to the RDBMS users. This means that when defining the schema, you must get it
 right or if changes need to be made down the line, these must be minimal, because any revision made later can slow or stop
-the database form operating.
+the database from operating.
 
 However, getting it right might have been true for the "old" world of static schema, but today, where changes need
 to be made daily,  a flexible schema is more appropriate.
